@@ -4,9 +4,11 @@ import com.liuganchen.indigo.entity.User;
 import com.liuganchen.indigo.repository.UserRepository;
 import com.liuganchen.indigo.service.UserSev;
 import org.springframework.data.domain.Example;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+@Service
 public class UserSevImpl implements UserSev {
     @Resource
     private UserRepository userRep;
@@ -19,6 +21,6 @@ public class UserSevImpl implements UserSev {
 
     @Override
     public User saveOne(User user) {
-        return null;
+        return this.userRep.save(user);
     }
 }

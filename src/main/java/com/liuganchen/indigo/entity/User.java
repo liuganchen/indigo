@@ -17,7 +17,10 @@ public class User {
     private String weChatId;
     private String appleId;
     private String name;
-    private String desc;
+    /**
+     * 0 男； 1 女 ； 2 其他
+     */
+    private Integer gender = 0;
     private String email;
     private Timestamp birthday;
     @CreatedDate
@@ -29,6 +32,14 @@ public class User {
     public User(String account, String password) {
         this.password = password;
         this.account = account;
+    }
+
+    public Integer getGender() {
+        return gender;
+    }
+
+    public void setGender(Integer gender) {
+        this.gender = gender;
     }
 
     public int getId() {
@@ -77,14 +88,6 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getDesc() {
-        return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
     }
 
     public String getEmail() {
