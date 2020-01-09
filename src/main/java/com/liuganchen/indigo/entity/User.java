@@ -12,6 +12,8 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    // 账号 = 手机号
+    @Column(unique=true, nullable=false)
     private String account;
     private String password;
     private String weChatId;
@@ -23,6 +25,7 @@ public class User {
     private Integer gender = 0;
     private String email;
     private Timestamp birthday;
+    private String avatar;
     @CreatedDate
     private Timestamp createTime;
 
@@ -36,6 +39,14 @@ public class User {
 
     public Integer getGender() {
         return gender;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 
     public void setGender(Integer gender) {
