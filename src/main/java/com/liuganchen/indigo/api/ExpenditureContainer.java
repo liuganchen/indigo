@@ -1,15 +1,15 @@
 package com.liuganchen.indigo.api;
 
-import com.liuganchen.indigo.entity.Order;
+import com.liuganchen.indigo.entity.Expenditure;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/order")
-public class OrderContainer {
+@RequestMapping("/api/expenditure")
+public class ExpenditureContainer {
     @PutMapping
-    public Object addNewOrder(Order order) {
+    public Object addNewOrder(Expenditure expenditure) {
         return null;
     }
 }
