@@ -12,14 +12,14 @@ spring:
   profiles:
     active: dev
 ---
-## 开发环境
+## 鐮斿彂鐜
 spring:
   profiles: dev
   datasource:
     url: jdbc:mysql://106.12.180.252:3306/indigo_test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
 
 ---
-### 生产环境
+### 鐢熶骇鐜
 spring:
   profiles: prod
   datasource:
