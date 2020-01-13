@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "wx.config.secret",
+      "type": "java.lang.String",
+      "description": "Description for wx.config.secret."
+    },
+    {
+      "name": "wx.config.appid",
+      "type": "java.lang.String",
+      "description": "Description for wx.config.appid."
+    }
+  ]
+}

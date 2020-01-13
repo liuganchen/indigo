@@ -11,6 +11,10 @@ spring:
       ddl-auto: update
   profiles:
     active: dev
+wx:
+  config:
+    secret: 88bd7ac61d22821f71a00d8f7d781563
+    appid: wxcd1cce2474cfc5cd
 ---
 ## 研发环境
 spring:

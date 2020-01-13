@@ -17,7 +17,6 @@ public class UserContainer {
     public User login(@NotNull @RequestBody User user) {
         return this.userSev.findOne(user.getAccount(), user.getPassword());
     }
-
     @PutMapping
     public Object register(@NotNull @RequestBody User user) {
         return userSev.isRegistered(user.getAccount()) ? 0 : this.userSev.saveOne(user);

@@ -13,7 +13,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     // 账号 = 手机号
-    @Column(unique=true, nullable=false)
+    @Column(unique = true, nullable = false)
     private String account;
     private String password;
     private String weChatId;
@@ -35,6 +35,13 @@ public class User {
     public User(String account, String password) {
         this.password = password;
         this.account = account;
+    }
+
+    public User(String weChatId, String avatar, String name) {
+        this.weChatId = weChatId;
+        this.avatar = avatar;
+        this.name = name;
+
     }
 
     public Integer getGender() {
