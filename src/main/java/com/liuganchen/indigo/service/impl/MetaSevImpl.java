@@ -21,6 +21,8 @@ public class MetaSevImpl implements MetaSev {
 
     @Override
     public List<Metadata> getList(int type) {
-        return this.metaRepository.getList(type).filter(s -> s.getType() == type).collect(Collectors.toList());
+        return this.metaRepository.getList()
+                .filter(s -> s.getType() == type)
+                .collect(Collectors.toList());
     }
 }
