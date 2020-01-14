@@ -15,6 +15,7 @@ wx:
   config:
     secret: 88bd7ac61d22821f71a00d8f7d781563
     appid: wxcd1cce2474cfc5cd
+    url: https://api.weixin.qq.com/sns/jscode2session?appid={appid}&secret={secret}&js_code={code}&grant_type=authorization_code
 ---
 ## 研发环境
 spring:

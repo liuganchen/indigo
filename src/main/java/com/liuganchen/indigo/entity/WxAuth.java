@@ -4,6 +4,15 @@ public class WxAuth {
     private String session_key;
     private String openid;
     private String errcode;
+    private String errmsg;
+
+    public String getErrmsg() {
+        return errmsg;
+    }
+
+    public void setErrmsg(String errmsg) {
+        this.errmsg = errmsg;
+    }
 
     public String getErrcode() {
         return errcode;

@@ -9,6 +9,11 @@
       "name": "wx.config.appid",
       "type": "java.lang.String",
       "description": "Description for wx.config.appid."
+    },
+    {
+      "name": "wx.config.url",
+      "type": "java.lang.String",
+      "description": "Description for wx.config.url."
     }
   ]
 }
