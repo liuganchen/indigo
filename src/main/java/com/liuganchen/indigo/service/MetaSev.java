@@ -8,4 +8,6 @@ public interface MetaSev {
     Metadata add(Metadata metadata);
 
     List<Metadata> getList(int type);
+
+    String translateMetaId(Integer id);
 }
