@@ -6,7 +6,6 @@ import com.liuganchen.indigo.entity.ExpenditureVoForOneDay;
 import com.liuganchen.indigo.service.ExpendSev;
 import com.liuganchen.indigo.util.AuthUtil;
 import org.jetbrains.annotations.NotNull;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

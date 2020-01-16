@@ -12,7 +12,7 @@ public class AuthUtil {
 
     @NotNull
     @Contract(pure = true)
-    public static String encryption(String str) {
+    public static String encryption(@NotNull String str) {
         final byte[] textByte = str.getBytes(StandardCharsets.UTF_8);
         return encoder.encodeToString(textByte);
     }
