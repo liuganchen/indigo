@@ -22,7 +22,7 @@ public class ExpenditureVo extends Expenditure {
         this.setContent(expenditure.getContent());
         this.setType(this.metaSev.translateMetaId(expenditure.getTypeId()));
         this.setKindId(expenditure.getId());
-        this.date = new SimpleDateFormat("yyyy 年 MM 月 dd 日 E HH 点 mm 分 ss 秒").format(expenditure.getCreateTime());
+        this.date = new SimpleDateFormat("yyyy年MM月dd日").format(expenditure.getCreateTime());
     }
 
     public String getType() {
@@ -39,12 +39,5 @@ public class ExpenditureVo extends Expenditure {
 
     public void setDate(String date) {
         this.date = date;
-    }
-
-    @Override
-    public String toString() {
-        return "ExpenditureVo{" +
-                "date='" + date + '\'' +
-                '}';
     }
 }

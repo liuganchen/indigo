@@ -71,4 +71,20 @@ public class Expenditure {
     public void setContent(String content) {
         this.content = content;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", typeId=" + typeId +
+                ", kindId=" + kindId +
+                ", createTime=" + createTime +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }
